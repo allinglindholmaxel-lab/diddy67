@@ -12,7 +12,7 @@
         <div class="logo">TennisPRO</div>
         <nav>
             <ul>
-                <li><a href="#historia">Historia</a></li>
+                <li><a href="#historia" onclick="document.getElementById('historia-text').style.display='block'">Historia</a></li>
                 <li><a href="#utrustning">Utrustning</a></li>
                 <li><a href="#tour">ATP/WTA</a></li>
             </ul>
@@ -91,10 +91,22 @@
             </table>
         </div>
     </div>
+</div> 
 
-    <footer>
-        <p>&copy; 2026 Tennisvärlden. Skapad med passion för sporten.</p>
-    </footer>
+<section id="historia" style="padding-top: 20px;">
+    <div class="container">
+        <div id="historia-text" style="display:none; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 40px;">
+            <h2>Tennisens Historia: Från Klostergårdar till det Svenska Undret</h2>
+            <button class="btn" onclick="document.getElementById('historia-text').style.display='none'" style="background: #e74c3c; color: white; border: none; cursor: pointer; padding: 10px 20px; border-radius: 5px; font-weight: bold;">Stäng historia</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Tennisvärlden. Skapad med passion för sporten.</p>
+</footer>
+    
+ 
 
        <h2>Tennisens Historia: Från Klostergårdar till det Svenska Undret</h2>
 <br>
