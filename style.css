@@ -212,3 +212,57 @@ body {
     color: #666;
     font-weight: bold;
 }
+
+
+/* Gör så att man hoppar mjukt till sektionen när man klickar på länken */
+html {
+    scroll-behavior: smooth;
+}
+
+.gs-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: white;
+    padding: 40px 20px;
+    margin: 40px auto;
+    border-radius: 15px;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.gs-column {
+    flex: 1;
+    min-width: 220px;
+    margin: 10px;
+}
+
+/* Denna box gör att listan blir skrollbar internt */
+.gs-scroll-box {
+    height: 300px; /* Bestämmer hur hög listan ska vara innan man måste skrolla */
+    overflow-y: auto;
+    border: 1px solid #eee;
+    padding: 10px;
+    background: #fafafa;
+    border-radius: 5px;
+}
+
+.gs-list {
+    list-style: none;
+    padding: 0;
+}
+
+.gs-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.95rem;
+}
+
+/* Snyggare scrollbar för moderna webbläsare */
+.gs-scroll-box::-webkit-scrollbar {
+    width: 6px;
+}
+.gs-scroll-box::-webkit-scrollbar-thumb {
+    background-color: #d4e157;
+    border-radius: 10px;
+}
