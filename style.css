@@ -344,3 +344,16 @@ html {
     font-weight: bold;
     color: #2c3e50;
 }
+/* Styling för den utfällbara historiken */
+#historia-text h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #d4e157;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#historia-text p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.8;
+}
