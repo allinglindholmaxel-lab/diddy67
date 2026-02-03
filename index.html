@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
- <meta charset="UTF-8">
- <title>Axel L.s första Webb på Github</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennisvärlden | Allt om sporten</title>
+    <style>
+        /* Modern CSS-reset och bas-styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigering */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #d4e157; /* Tennisbolls-gul */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #d4e157;
+        }
+
+        /* Hero-sektion */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1595435064214-04d1658966b8?auto=format&fit=crop&w=1500&q=80') center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            background: #d4e157;
+            color: #2c3e50;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Innehållssektioner */
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+    </style>
 </head>
 <body>
- <h1>AI1 – Mitt projekt</h1>
- <p>Detta är en enkel webbsida publicerad januari med GitHub Pages.</p>
+
+    <header>
+        <div class="logo">TennisPRO</div>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#utrustning">Utrustning</a></li>
+                <li><a href="#tour">ATP/WTA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Upplev Kraften i Tennis</h1>
+        <p>Från grusbanor i Paris till gräset i Wimbledon.</p><br>
+        <a href="#" class="btn">Läs mer om sporten</a>
+    </section>
+
+    <div class="container">
+        <section class="grid">
+            <div class="card">
+                <h3>Grand Slams</h3>
+                <p>De fyra största turneringarna i världen: Australian Open, Franska Öppna, Wimbledon och US Open.</p>
+            </div>
+            <div class="card">
+                <h3>Underlag</h3>
+                <p>Lär dig skillnaden mellan att spela på grus, gräs och hardcourt och hur det påverkar bollen.</p>
+            </div>
+            <div class="card">
+                <h3>Teknik</h3>
+                <p>Förbättra din serve, forehand och backhand med våra expertguider och videoklipp.</p>
+            </div>
+        </section>
+
+        <article id="historia" style="margin-top: 40px;">
+            <h2>Sportens Historia</h2>
+            <p>Modern tennis uppstod i Birmingham, England, sent på 1800-talet. Sedan dess har sporten utvecklats till ett globalt fenomen med miljontals utövare.</p>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tennisvärlden. Skapad med passion för sporten.</p>
+    </footer>
+
 </body>
 </html>
