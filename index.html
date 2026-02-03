@@ -12,7 +12,7 @@
         <div class="logo">TennisPRO</div>
         <nav>
             <ul>
-                <li><a href="#historia" onclick="document.getElementById('historia-text').style.display='block'">Historia</a></li>
+                <li><a href="#historia" onclick="document.getElementById('historia-text').style.display='block';">Historia</a></li>
                 <li><a href="#grandslams">Grand Slams</a></li>
                 <li><a href="https://www.atptour.com/en" target="_blank">ATP Tour</a></li>
             </ul>
@@ -34,7 +34,6 @@
     </section>
 
     <div id="vinnarlistor" class="container" style="display:none; margin-top: 40px;">
-        
         <div class="tournament-box">
             <h3>Franska Öppna - Flest titlar</h3>
             <table class="winner-table">
@@ -83,18 +82,20 @@
         </div>
     </div>
 
-    <section id="historia" style="padding-top: 20px;">
+    <section id="historia">
         <div class="container">
-            <div id="historia-text" style="display:none; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 40px;">
-                <h2>Tennisens Historia: Från Klostergårdar till det Svenska Undret</h2>
-                <br>
-                <p>Tennis har sina rötter i 1100-talets Frankrike, där det ursprungligen spelades av munkar. Sporten kallades <i>"jeu de paume"</i>. Det moderna spelet föddes i England på 1870-talet, med det första mästerskapet i Wimbledon 1877.</p>
-                <br>
-                <h3>Det Svenska Tennisundret</h3>
-                <p>Sverige har en helt unik plats i tennishistorien. Allt började på 1970-talet med <strong>Björn Borg</strong>. Med sitt legendariska pannband och sin iskalla mentala styrka vann han 11 Grand Slam-titlar och blev en global popikon.</p>
-                <br>
-                <p>Efter Borg dominerade Sverige totalt under 80- och 90-talet med världsettor som <strong>Mats Wilander</strong> och <strong>Stefan Edberg</strong>. Sverige har även vunnit <strong>Davis Cup</strong> hela sju gånger, vilket är bland de mesta i världen.</p>
-                <br>
+            <div id="historia-text" class="history-card" style="display:none;">
+                <h2>Tennisens Historia</h2>
+                <div class="history-content">
+                    <p>Tennis har sina rötter i 1100-talets Frankrike, där det ursprungligen spelades av munkar. Sporten kallades <i>"jeu de paume"</i>. Det moderna spelet föddes i England på 1870-talet, med det första mästerskapet i Wimbledon 1877.</p>
+                    
+                    <h3>Det Svenska Tennisundret</h3>
+                    <p>Sverige har en helt unik plats i tennishistorien. Allt började på 1970-talet med <strong>Björn Borg</strong>. Med sitt legendariska pannband och sin iskalla mentala styrka vann han 11 Grand Slam-titlar och blev en global popikon.</p>
+                    
+                    <p>Efter Borg dominerade Sverige totalt under 80- och 90-talet med världsettor som <strong>Mats Wilander</strong> och <strong>Stefan Edberg</strong>. Sverige har även vunnit <strong>Davis Cup</strong> hela sju gånger, vilket är bland de mesta i världen.</p>
+                    
+                    <p>Idag lever arvet vidare genom nya generationer och en stark svensk tenniskultur som fortsätter att inspirera unga spelare över hela landet.</p>
+                </div>
                 <button class="btn-close" onclick="document.getElementById('historia-text').style.display='none'">Stäng historia</button>
             </div>
         </div>
