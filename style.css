@@ -161,3 +161,54 @@ body {
     border-radius: 50%; /* Gör bilden perfekt rund om den inte redan är det */
     box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Ger bollen lite djup */
 }
+
+
+
+/* Ny styling för Grand Slam-listan */
+.gs-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1100px;
+}
+
+.gs-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.gs-column h4 {
+    color: #2c3e50;
+    border-bottom: 2px solid #d4e157;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.gs-list {
+    list-style: none;
+    padding: 0;
+}
+
+.gs-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.gs-list li strong {
+    display: block;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+.winner-year {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: bold;
+}
