@@ -115,3 +115,24 @@
             padding: 2rem 0;
             margin-top: 3rem;
         }
+
+
+/* Ny styling för bakgrunden */
+body {
+    line-height: 1.6;
+    color: #333;
+    /* Bakgrundsbild som täcker hela skärmen och fixeras vid scroll */
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
+                url('https://images.unsplash.com/photo-1592709823125-a191f07a2a5e?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Vi gör korten lite mer solida för att de ska poppa mot bakgrunden */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
