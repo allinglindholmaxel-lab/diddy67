@@ -136,3 +136,28 @@ body {
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
+
+
+
+.hero {
+    /* Här byter vi ut den grå färgen mot bilden på tennisbanan */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1595435064214-04d1658966b8?auto=format&fit=crop&w=1500&q=80') center/cover;
+    height: 80vh; /* Gjorde den lite högre för att få plats med bollen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Styling för tennisbolls-bilden */
+.tennis-ball-img {
+    margin-top: 30px; /* Skapar avstånd från knappen */
+    width: 150px;     /* Justera storleken på bollen här */
+    height: auto;
+    border-radius: 50%; /* Gör bilden perfekt rund om den inte redan är det */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Ger bollen lite djup */
+}
