@@ -1,4 +1,3 @@
-/* Grundinställningar */
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,6 @@ body {
     background-attachment: fixed;
 }
 
-/* Header & Nav */
 header {
     background: #2c3e50;
     color: #fff;
@@ -44,9 +42,7 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
+nav ul li { margin-left: 20px; }
 
 nav ul li a {
     color: #fff;
@@ -54,11 +50,8 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #d4e157;
-}
+nav ul li a:hover { color: #d4e157; }
 
-/* Hero */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
                 url('https://images.unsplash.com/photo-1595435064214-04d1658966b8?auto=format&fit=crop&w=1500&q=80') center/cover;
@@ -77,12 +70,10 @@ nav ul li a:hover {
 .tennis-ball-img {
     margin-top: 30px;
     width: 120px;
-    height: auto;
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
-/* Knappar */
 .btn {
     background: #d4e157;
     color: #2c3e50;
@@ -98,25 +89,49 @@ nav ul li a:hover {
 
 .btn:hover { transform: scale(1.05); }
 
+/* Historia-kortet (Smalare och mer lodrätt) */
+.history-card {
+    max-width: 600px; /* Gör textkroppen smalare */
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.history-content {
+    text-align: left; /* Texten inuti är vänsterställd för läsbarhet */
+    margin: 20px 0;
+}
+
+.history-content p {
+    margin-bottom: 20px;
+}
+
+.history-content h3 {
+    margin: 30px 0 10px 0;
+    color: #2c3e50;
+}
+
 .btn-close {
     background: #e74c3c;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
     margin-top: 20px;
+    width: 100%; /* Knappen sträcker sig över hela kortets bredd */
 }
 
-/* Behållare */
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Vinnarlistor Boxar */
 .tournament-box {
     background: white;
     margin-bottom: 30px;
@@ -125,16 +140,6 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     max-height: 350px;
     overflow-y: auto;
-}
-
-.tournament-box h3 {
-    color: #2c3e50;
-    border-bottom: 3px solid #d4e157;
-    margin-bottom: 15px;
-    position: sticky;
-    top: 0;
-    background: white;
-    padding: 5px 0;
 }
 
 .winner-table {
@@ -150,10 +155,8 @@ nav ul li a:hover {
 .winner-table td:last-child {
     text-align: right;
     font-weight: bold;
-    color: #2c3e50;
 }
 
-/* Footer */
 footer {
     background: #2c3e50;
     color: white;
